@@ -7,21 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="signuppage.css">
+    <link rel="stylesheet" type="text/css" href="users.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>I&I sign up</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">innovations and inventors</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">contact us</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">instagram</a>
+              <a class="dropdown-item" href="#">facebook</a>
+              <a class="dropdown-item" href="#">twitter</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" aria-disabled="true">projects</a>
+          </li>
+        </ul>
+    
+      </div>
+</nav>
 
     <section class="container-fluid">
-      <h1 class="message">You Like To Join Us?,Awesome!</h1>
+      <h1 class="message">You Like to join us? Awesome!</h1>
       <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-5">
           <form class="login-form needs-validation" novalidate>
-            <h2 class="login-header">Sign up</h2>
             <div class="row">
              <div class="col-md-6 name-2 form-group">
                 <label for="exampleInputFirstName1">First Name</label>
-                <input type="text" class="form-control" id="exampleInputFirstName1" required>
+                <input type="text" class="form-control" id="exampleInputFirstName1" required placeholder="First Name">
                 <div class="invalid-feedback">
                   Please enter your name 
                 </div>
@@ -29,12 +55,12 @@
               </div>
               <div class="col-md-6 form-group">
                 <label for="exampleInputLastName1">Last Name</label>
-                <input type="text" class="form-control" id="exampleInputLastName1">
+                <input type="text" class="form-control" id="exampleInputLastName1" placeholder="Last Name">
               </div>
               </div>
             <div class="form-group">
                 <label for="exampleInputCollegeName1">College Name</label>
-                <input type="text" class="form-control" id="exampleInputCollegeName1" required>
+                <input type="text" class="form-control" id="exampleInputCollegeName1" required placeholder="College Name">
                 <div class="invalid-feedback">
                   Please enter your college name                
                 </div>
@@ -42,7 +68,7 @@
             <div class="row">
             <div class="col-md-6 form-group">
                 <label for="exampleInputDepartmenttName1">Department</label>
-                <input type="text" class="form-control" id="exampleInputDepartmentName1" required>
+                <input type="text" class="form-control" id="exampleInputDepartmentName1" required placeholder="eg:cse">
                 <div class="invalid-feedback">
                   Please enter your department                
                 </div>
@@ -60,14 +86,14 @@
 
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Email ID">
               <div class="invalid-feedback">
                   Please enter valid email-id               
                 </div>
             </div>
             <div class="form-group">
               <label for="exampleInputMobileNumber1">Mobile Number</label>
-              <input type="tel" pattern="[0-9]+$" class="form-control" id="exampleInputMobileNumber1" minlength="10" maxlength="10"required>
+              <input type="tel" pattern="[0-9]+$" class="form-control" id="exampleInputMobileNumber1" minlength="10" maxlength="10"required placeholder="Mobile Number">
               <div class="invalid-feedback">
                   Please enter valid mobile number                
                 </div>
@@ -75,7 +101,7 @@
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" minlength="6" maxlength="16" required>
+              <input type="password" class="form-control" id="exampleInputPassword1" minlength="6" maxlength="16" required placeholder="Password">
               <small id="passwordHelpInline" class="text-muted">
                   Must be 6-16 characters long.
               </small>
@@ -92,21 +118,32 @@
       </section>
       
     </section>
-    
-
+    <footer>
+      <div class="social-network">
+        <a href=""><i class="fa fa-facebook-official" id="facebook" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+      <hr>
+      <div class="members">
+        <a class="join-footer-link" href="signuppage.html">join us</a>
+      </div>
+    <div id='mailid'>
+      <p>innovation.inventors@gmail.com</p>
+    </div>
+    </footer>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+
       (function() {
         'use strict';
         window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
           var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
           var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
               if (form.checkValidity() === false) {

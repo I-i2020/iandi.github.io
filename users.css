@@ -1,0 +1,125 @@
+html{
+	font-size: 10px;
+}
+.message {
+	text-align: center;
+	margin-top: 7.6rem;
+	margin-right: 2.6rem;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding: 3rem;
+}
+.form-control{
+	font-size: 1.6rem;
+}
+.login-form {
+	font-size: 1.6rem;
+	background: #232526;
+	color: #FFFFFF;
+	padding: 2.6rem;
+	border-radius: 1.6rem;
+	box-shadow: .16rem .16rem 1.6rem .16rem #232526;
+	margin-bottom: 4rem;
+	border-style: none;
+}
+.form-last {
+	padding: .16rem; 
+	text-align: center;
+}
+
+.btn {
+	background: #267871;
+	border-style: none;
+	font-size: 1.6rem;
+}
+.btn:hover {
+  background: #3A9070;
+  border-style: none;
+}
+
+.nav-item {
+	text-align: center;
+	font-size: 2rem;
+	margin: 1rem;
+	font-variant:small-caps; 
+}
+.navbar-brand {
+	padding: .5rem;
+	font-size: 2rem;
+	font-variant:small-caps; 
+}
+.dropdown-item {
+	font-size: 2rem;
+	text-align: center;
+	font-variant:small-caps;
+}
+.dropdown-item:hover{
+	background-color: #267871;
+	color: #fff;
+}
+
+footer{
+	margin-top: 10rem;
+	padding: 10rem;
+	width: 100%;
+	background-color:#232526;
+	text-align: center;
+}
+.join-footer-link{
+	text-decoration: none;
+	color: white;
+	border: .2rem solid #ffff;
+	padding: 1rem;
+	font-size: 2.5rem;
+	transition: ease-out 0.7s;
+	box-shadow: inset 0 0 0 0 #ffff;
+	text-transform: uppercase;
+}
+.join-footer-link:hover {
+	color: #fff;
+	text-decoration: none;
+	border:.2rem solid #232526 ;
+	box-shadow: inset 400px 0 0 0 #267871;
+}
+::selection {
+    background: #267871;
+    color: #fff;
+}
+
+.social-network .fa{
+	color: #ffff;
+    display: inline-block;
+    padding: 0 1rem 1rem 1rem;
+    font-size: 4rem;
+}
+hr{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+footer hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    width: 50%;
+    border-top: 2px solid hsla(0,0%,100%,.1);
+}
+.members{
+	text-align: center;
+	padding: 2rem;
+}
+
+#mailid {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.2rem;
+    color: #fff;
+}

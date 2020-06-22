@@ -7,67 +7,82 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="loginpage.css">
-
+    <link rel="stylesheet" type="text/css" href="users.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>I&I login</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="index.html"><img src="#">innovations and inventors</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">contact us
+           
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">instagram</a>
+          <a class="dropdown-item" href="#">facebook</a>
+          <a class="dropdown-item" href="#">twitter</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" aria-disabled="true">projects</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
 
     <section class="container-fluid">
-      <div id="heading">
-        <h1 class="message">Welcome back!</h1>
-      </div>
+      <h1 class="message">Welcome back!</h1>
       <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
-          <form class="login-form needs-validation" novalidate>
-            <h2 class="login-header">Login</h2>
+          <form class="login-form">
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-              <div class="invalid-feedback">
-                  Please valid email 
-                </div>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" required>
-              <div class="invalid-feedback">
-                  incorrect password               
-              </div>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-primary btn-block">Login</button>
             <div class="form-last">Don't  have  an  account? <span><a href="#">Sign up</a></span></div>
-            <div class="forgot-pass"><a href="#">Forgot Password</a></div>
+          
           </form>
           
         </section>
       </section>
       
     </section>
-    
+    <footer>
+      <div class="social-network">
+        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+      <hr>
+      <div class="members">
+        <a class="join-footer-link" href="signuppage.html">Join us</a>
+      </div>
+    <div id='mailid'>
+      <p>innovation.inventors@gmail.com</p>
+    </div>
+    </footer>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-     <script>
-
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          var forms = document.getElementsByClassName('needs-validation');
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-    </script>
   </body>
 </html>
